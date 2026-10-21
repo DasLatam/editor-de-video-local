@@ -1,0 +1,8 @@
+# Lo mínimo para que el editor arranque, recorte y exporte.
+# Versiones con las que se probó (tests/test_api.py).
+fastapi==0.137.1
+uvicorn[standard]==0.49.0
+python-multipart==0.0.32
+aiofiles==25.1.0
+SQLAlchemy==2.0.51
+pydantic==2.13.4

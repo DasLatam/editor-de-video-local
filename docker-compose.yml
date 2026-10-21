@@ -1,0 +1,13 @@
+services:
+  editor:
+    build: .
+    container_name: editor-de-video-local
+    ports:
+      - "127.0.0.1:8088:8088"     # sacá el 127.0.0.1: para abrirlo a la red local
+    volumes:
+      - ./storage:/app/storage       # subidas, exports, base y modelos de Whisper
+    environment:
+      - BRAND_NAME=Editor de video
+      # - BRAND_LOGO=/app/storage/logo.png
+      # - BRAND_WATERMARK=/app/storage/watermark.png
+    restart: unless-stopped

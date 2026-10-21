@@ -1,0 +1,4 @@
+# Opcional: subtítulos automáticos. Sin esto el editor funciona igual y los
+# subtítulos se cargan a mano. No usa PyTorch (corre sobre CTranslate2, en CPU);
+# el modelo se baja la primera vez que se transcribe (~500 MB el "small").
+faster-whisper==1.2.1
